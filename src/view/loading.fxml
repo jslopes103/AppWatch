@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="aP" fx:controller="controller.LoadingController" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1200.0" style="-fx-background-color: linear-gradient(to bottom,#ffc6ff, #fffffc);;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <AnchorPane layoutY="140.0" prefHeight="660.0" prefWidth="1200.0" style="-fx-background-color: linear-gradient(to bottom,#ffc6ff, #fffffc);">
+         <children>
+            <ImageView fitHeight="245.0" fitWidth="252.0" layoutX="716.0" layoutY="303.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="/images/loading.gif" />
+               </image>
+            </ImageView>
+            <Label layoutX="225.0" layoutY="380.0" prefHeight="70.0" prefWidth="208.0" text="Loading..." textFill="#975959">
+               <font>
+                  <Font size="48.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <JFXButton layoutX="443.0" layoutY="39.0" prefHeight="44.0" prefWidth="138.0" style="-fx-background-color: #fffffc; -fx-background-radius: 10;" text="MOVIES" textFill="#975959">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="644.0" layoutY="39.0" prefHeight="44.0" prefWidth="138.0" style="-fx-background-color: #fffffc; -fx-background-radius: 10;" text="SERIES" textFill="#975959">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="1086.0" layoutY="14.0" prefHeight="100.0" prefWidth="100.0" style="-fx-background-color: #fffffc; -fx-background-radius: 50;" text="11.88£" textFill="#975959">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </JFXButton>
+      <Label layoutX="976.0" layoutY="51.0" prefHeight="27.0" prefWidth="110.0" text="Total to pay" textFill="#975959">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
