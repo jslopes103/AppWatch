@@ -123,6 +123,7 @@ public class MainController {
 
 	int category = 0;
 	int categoryCount = 0;
+	int categoryChanged = 0;
 	
 	String originalStyle = "-fx-background-color: #fffffc; -fx-background-radius: 10;";
 	String clickedStyle = "-fx-background-color: #ffb5a7; -fx-background-radius: 10;";
@@ -130,7 +131,7 @@ public class MainController {
 	@FXML
 	protected void initialize() {
 
-		//test commit
+		categoryChanged = 1;
 		showCategory(1, 0);
 		b01.setStyle(clickedStyle);
 		btMovie.setStyle(clickedStyle);
@@ -255,7 +256,7 @@ public class MainController {
 	private void handleMoreAction(ActionEvent event)
 	{
 		categoryCount++;
-		showCategory(1, categoryCount);
+		showCategory(categoryChanged, categoryCount);
 		btless.setVisible(true);
 	}
 	
@@ -263,7 +264,7 @@ public class MainController {
 	private void handleLessAction(ActionEvent event)
 	{
 		categoryCount--;
-		showCategory(1, categoryCount);
+		showCategory(categoryChanged, categoryCount);
 	}
 	
 	@FXML
@@ -277,6 +278,8 @@ public class MainController {
 	    resetStyle();
 	    
 		showCategory(value, 0);
+		
+		categoryChanged = value;
 		
 		switch(value)
 		{
