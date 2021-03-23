@@ -130,6 +130,7 @@ public class MainController {
 	@FXML
 	protected void initialize() {
 
+		//test commit
 		showCategory(1, 0);
 		b01.setStyle(clickedStyle);
 		btMovie.setStyle(clickedStyle);
