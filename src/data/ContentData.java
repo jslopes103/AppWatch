@@ -31,8 +31,7 @@ public class ContentData {
 				content.setImage(resultSet.getString(3));
 				content.setIdCategory(resultSet.getInt(4));
 				content.setType(resultSet.getInt(5));
-				content.setPrice(resultSet.getInt(6));
-				System.out.println(resultSet.getString(2));
+				content.setPrice(resultSet.getDouble(6));
 				Content.list.add(content);
 				ret = true;
 			}

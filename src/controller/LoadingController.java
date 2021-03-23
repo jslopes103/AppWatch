@@ -30,7 +30,7 @@ public class LoadingController {
 						if (new ContentData().selectAllContent() == false) {
 							alert = new AlertController(AlertType.ERROR, "Database Connection",
 									"Unable to get the content!");
-							break;
+							break; 
 						}
 
 						getContent = true;
