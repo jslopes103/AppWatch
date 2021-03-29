@@ -21,17 +21,18 @@ public class ContentData {
 		
 		try {
 			connection = Database.getConnection();
-			String query = "SELECT idContent, name, image, idCategory, type, price FROM content;";
+			String query = "SELECT idContent, name, description, image, idCategory, type, price FROM content;";
 			statement = connection.createStatement();
 			resultSet = statement.executeQuery(query);
 			while (resultSet.next()) {
 				Content content = new Content();
 				content.setIdContent(resultSet.getInt(1));
 				content.setName(resultSet.getString(2));
-				content.setImage(resultSet.getString(3));
-				content.setIdCategory(resultSet.getInt(4));
-				content.setType(resultSet.getInt(5));
-				content.setPrice(resultSet.getDouble(6));
+				content.setDescription(resultSet.getString(3));
+				content.setImage(resultSet.getString(4));
+				content.setIdCategory(resultSet.getInt(5));
+				content.setType(resultSet.getInt(6));
+				content.setPrice(resultSet.getDouble(7));
 				Content.list.add(content);
 				ret = true;
 			}

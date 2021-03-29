@@ -9,6 +9,7 @@ public class Content {
 	
 	int idContent;
 	String name;
+	String description;
 	String image;
 	int idCategory;
 	int type;
@@ -25,6 +26,12 @@ public class Content {
 	}
 	public void setName(String name) {
 		this.name = name;
+	}
+	public String getDescription() {
+		return description;
+	}
+	public void setDescription(String description) {
+		this.description = description;
 	}
 	public String getImage() {
 		return image;

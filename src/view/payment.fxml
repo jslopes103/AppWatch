@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="aP" fx:controller="controller.PaymentController" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="305.0" prefWidth="600.0" style="-fx-background-color: #fec5bb; -fx-background-radius: 30;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <TextField fx:id="cardField" layoutX="172.0" layoutY="70.0" prefHeight="26.0" prefWidth="327.0" />
+      <Label layoutX="74.0" layoutY="83.0" prefHeight="18.0" prefWidth="100.0" text="CARD NUMBER" textFill="#975959" />
+      <CheckBox fx:id="checkBox" onAction="#handleCheckAction" layoutX="172.0" layoutY="110.0" mnemonicParsing="false" text="Send confirmation by email." textFill="#975959" />
+      <TextField fx:id="emailField" layoutX="172.0" layoutY="152.0" prefHeight="26.0" prefWidth="327.0" visible="false" />
+      <Label layoutX="124.0" layoutY="165.0" prefHeight="18.0" prefWidth="44.0" text="EMAIL" textFill="#975959" visible="false" />
+      <JFXButton fx:id="payButton" layoutX="218.0" layoutY="207.0" prefHeight="32.0" prefWidth="182.0" style="-fx-background-color: linear-gradient(to bottom,#ffc6ff, #fffffc); -fx-background-radius: 10;" text="PAY" textFill="#975959" visible="false" />
+      <JFXButton onAction="#handleCloseAction" layoutX="512.0" layoutY="14.0" minWidth="44.0" prefHeight="32.0" prefWidth="44.0" style="-fx-background-color: #ffffff; -fx-background-radius: 30;" text="X" textFill="#fec5bb" />
+   </children>
+</AnchorPane>

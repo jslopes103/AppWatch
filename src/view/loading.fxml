@@ -33,15 +33,5 @@
             <Font size="20.0" />
          </font>
       </JFXButton>
-      <JFXButton layoutX="1086.0" layoutY="14.0" prefHeight="100.0" prefWidth="100.0" style="-fx-background-color: #fffffc; -fx-background-radius: 50;" text="11.88£" textFill="#975959">
-         <font>
-            <Font size="20.0" />
-         </font>
-      </JFXButton>
-      <Label layoutX="976.0" layoutY="51.0" prefHeight="27.0" prefWidth="110.0" text="Total to pay" textFill="#975959">
-         <font>
-            <Font size="18.0" />
-         </font>
-      </Label>
    </children>
 </AnchorPane>

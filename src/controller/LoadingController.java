@@ -61,7 +61,5 @@ public class LoadingController {
 	@FXML
 	protected void initialize() {
 		new CheckDatabase().start();
-
-		// new AlertController().createAlert(AlertType.CONFIRMATION, "Header", "Body");
 	}
 }
