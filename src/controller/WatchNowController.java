@@ -62,7 +62,7 @@ public class WatchNowController {
 	//limite of textfield
 	int maxCardNumber = 8;
 
-	//get all content according to cardnumber
+	//get all content according to card's number
 	ContentData contentData = new ContentData();
 
 	@FXML

@@ -18,7 +18,7 @@ import javafx.scene.paint.Color;
 //alert controller (responsible for all the alert's messages)
 public class AlertController {
 
-	//set Alert as null
+	//set alert as null
 	private Alert alert = null;
 
 	//alert constructor
@@ -46,7 +46,7 @@ public class AlertController {
 					}
 				}
 			} 
-			//alert type confirmation will go to payment screen
+			//alert type confirmation will go to payment's screen
 			else if (alert.getAlertType() == type.CONFIRMATION) {
 				if (alert.getResult() == ButtonType.YES) {
 					//load payment screen
