@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="aP" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="305.0" prefWidth="600.0" style="-fx-background-color: #fec5bb; -fx-background-radius: 30;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.WatchNowController">
+   <children>
+      <TextField fx:id="cardField" layoutX="172.0" layoutY="70.0" prefHeight="26.0" prefWidth="300.0" />
+      <Label layoutX="74.0" layoutY="75.0" prefHeight="18.0" prefWidth="100.0" text="CARD NUMBER" textFill="#975959" />
+      <JFXButton fx:id="checkCard" onAction="#handleCheckAction" layoutX="218.0" layoutY="257.0" prefHeight="32.0" prefWidth="182.0" style="-fx-background-color: linear-gradient(to bottom,#ffc6ff, #fffffc); -fx-background-radius: 10;" text="CHECK CARDNUMBER" textFill="#975959" visible="false" />
+      <JFXButton layoutX="512.0" layoutY="14.0" minWidth="44.0" onAction="#handleCloseAction" prefHeight="32.0" prefWidth="44.0" style="-fx-background-color: #ffffff; -fx-background-radius: 30;" text="X" textFill="#fec5bb" />
+      <JFXComboBox fx:id="comboBox" onAction="#handleComboBoxAction" layoutX="168.0" layoutY="128.0" prefHeight="28.0" prefWidth="308.0" visible="false" />
+      <JFXButton fx:id="watchNow" onAction="#handleWatchAction" layoutX="218.0" layoutY="194.0" prefHeight="32.0" prefWidth="182.0" style="-fx-background-color: linear-gradient(to bottom,#ffc6ff, #fffffc); -fx-background-radius: 10;" text="WATCH NOW" textFill="#975959" visible="false" />
+   </children>
+</AnchorPane>

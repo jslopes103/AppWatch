@@ -3,9 +3,14 @@ package model;
 import java.util.ArrayList;
 import java.util.List;
 
+//content model
 public class Content {
 	
+	//list of all contents
 	public static List<Content> list = new ArrayList<Content>();
+	
+	public static int idContentBought = -1;
+	public static String nameContentBought = "";
 	
 	int idContent;
 	String name;

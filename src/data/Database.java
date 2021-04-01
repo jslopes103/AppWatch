@@ -4,24 +4,17 @@ import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
 
+//database
 public class Database {
 
+	//connection strings
+    private static final String CONNECTION = "jdbc:mysql://sql4.freesqldatabase.com:3306/sql4402504";
+    private static final String USER = "sql4402504";
+    private static final String PASSWORD = "NLxwdWC7az";
 
-    private static final String DRIVER = "com.mysql.cj.jdbc.Driver";
-    private static final String CONNECTION = "jdbc:mysql://127.0.0.1:3306/appwatch";
-    private static final String USER = "root";
-    private static final String PASSWORD = "12345678";
-
-   
+    //get connection
     public static Connection getConnection() throws SQLException {
     	Connection connection = null;
-        try {
-            Class.forName(DRIVER);
-        } catch (ClassNotFoundException exception) {
-            System.out.println(exception.getMessage());
-            return connection;
-        }
-
 
         try {
             connection = DriverManager.getConnection(CONNECTION, USER, PASSWORD);

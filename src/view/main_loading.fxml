@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1000.0" style="-fx-background-color: linear-gradient(to bottom,#ffc6ff, #fffffc);" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" >
+   <children>
+      <AnchorPane layoutY="130.0" prefHeight="727.0" prefWidth="1000.0" style="-fx-background-color: linear-gradient(to bottom,#ffc6ff, #fffffc);">
+         <children>
+            <AnchorPane prefHeight="516.0" prefWidth="186.0" style="-fx-background-color: #ffc6ff; -fx-background-radius: 0 100 100 0;">
+               <children>
+                  <JFXButton layoutX="14.0" layoutY="59.0" prefHeight="45.0" prefWidth="150.0" style="-fx-background-color: #fffffc; -fx-background-radius: 10;" text="ACTION" textFill="#975959" userData="1">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton layoutX="12.0" layoutY="115.0" prefHeight="45.0" prefWidth="150.0" style="-fx-background-color: #fffffc; -fx-background-radius: 10;" text="FANTASY" textFill="#975959" userData="2">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton layoutX="14.0" layoutY="170.0" prefHeight="45.0" prefWidth="150.0" style="-fx-background-color: #fffffc; -fx-background-radius: 10;" text="HORROR" textFill="#975959" userData="3">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton layoutX="14.0" layoutY="227.0" prefHeight="45.0" prefWidth="150.0" style="-fx-background-color: #fffffc; -fx-background-radius: 10;" text="SUSPENSE" textFill="#975959" userData="4">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton layoutX="14.0" layoutY="283.0" prefHeight="45.0" prefWidth="150.0" style="-fx-background-color: #fffffc; -fx-background-radius: 10;" text="COMEDY" textFill="#975959" userData="5">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton layoutX="14.0" layoutY="339.0" prefHeight="45.0" prefWidth="150.0" style="-fx-background-color: #fffffc; -fx-background-radius: 10;" text="DRAMA" textFill="#975959" userData="6">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton layoutX="14.0" layoutY="394.0" prefHeight="45.0" prefWidth="150.0" style="-fx-background-color: #fffffc; -fx-background-radius: 10;" text="ROMANCE" textFill="#975959" userData="7">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </JFXButton>
+               </children>
+               <effect>
+                  <DropShadow color="WHITE" height="10.0" radius="4.5" width="10.0" />
+               </effect>
+            </AnchorPane>
+            <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="473.0" layoutY="144.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="/images/loading.gif" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <JFXButton layoutX="425.0" layoutY="44.0" prefHeight="44.0" prefWidth="138.0" style="-fx-background-color: #fffffc; -fx-background-radius: 10;" text="MOVIES" textFill="#975959">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="567.0" layoutY="44.0" prefHeight="44.0" prefWidth="138.0" style="-fx-background-color: #fffffc; -fx-background-radius: 10;" text="SERIES" textFill="#975959">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="873.0" layoutY="16.0" prefHeight="100.0" prefWidth="100.0" style="-fx-background-color: #fffffc; -fx-background-radius: 50;" text="0.00€" textFill="#975959">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </JFXButton>
+      <Label layoutX="763.0" layoutY="53.0" prefHeight="27.0" prefWidth="110.0" text="Total to pay" textFill="#975959">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <JFXButton layoutX="44.0" layoutY="43.0" prefHeight="45.0" prefWidth="130.0" style="-fx-background-color: #fffffc; -fx-background-radius: 10;" text="WATCH NOW!" textFill="#975959">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>
